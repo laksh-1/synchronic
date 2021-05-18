@@ -1,7 +1,6 @@
 @font-face {
   font-family: monument;
-  src: url(fonts/MonumentExtended-Ultralight.otf);
-  font-weight: 100;
+  src: url(../fonts/MonumentExtended-Light.otf);
 }
 
 body {
