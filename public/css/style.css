@@ -3,6 +3,12 @@ body {
   color: #272829;
 }
 
+@font-face {
+  font-family: monument;
+  src: url(fonts/MonumentExtended-Ultralight.otf);
+  font-weight: 100;
+}
+
 a {
   color: #6facd1;
   font-size: larger;
@@ -22,7 +28,8 @@ h4,
 h5,
 h6 {
   /* font-family: "Raleway", sans-serif; */
-  font-family: "Monument Extended Light";
+  font-family: monument;
+  font-weight: 100;
 }
 
 /* Back to top */
@@ -91,7 +98,7 @@ h6 {
 #header .profile h1 a:hover {
   color: #fff;
   text-decoration: none;
-  font-family: "Monument Extended Light";
+  font-family: monument;
 }
 
 #header .profile .social-links a {
@@ -408,7 +415,7 @@ section {
 
 .description {
   color: #b3d6ec;
-  font-size: "Monument Extended Light";
+  font-size: monument;
 }
 
 /*--------------------------------------------------------------

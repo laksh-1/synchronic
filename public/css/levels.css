@@ -8,6 +8,12 @@
 
 /* Style the header links */
 
+@font-face {
+  font-family: monument;
+  src: url(fonts/MonumentExtended-Ultralight.otf);
+  font-weight: 100;
+}
+
 header {
   height: 100%;
   width: 100%;
@@ -196,7 +202,7 @@ body {
 .card-title {
   color: rgb(221, 220, 220);
   font-size: 1.3rem;
-  font-family: "Monument Extended";
+  font-family: monument;
 }
 
 .vertical-timeline {
@@ -325,18 +331,19 @@ a {
 h2 {
   text-align: center;
   color: white;
-  font-family: "Monument Extended";
+  font-family: monument;
 }
 
 h1 {
   text-align: center;
   color: white;
-  font-family: "Monument Extended";
+  font-family: monument;
   font-size: 2.5rem;
   /* font-weight: 500; */
 }
 
 #synchronic {
+  font-weight: 500;
   color: transparent;
   text-transform: uppercase;
   background: linear-gradient(
@@ -515,7 +522,7 @@ h4 {
 h3 {
   text-align: center;
   font-size: 1.2rem;
-  font-family: "Monument Extended";
+  font-family: monument;
   color: rgb(62, 98, 214);
 }
 
