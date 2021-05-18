@@ -45,7 +45,7 @@ const userSchema = new mongoose.Schema({
   email: String,
   password: String,
   team: String,
-  levelone: { type: Boolean, default: true },
+  levelone: { type: Boolean, default: false },
   levelonehint: { type: Boolean, default: false },
   levelonetime: { type: String, default: "" },
   leveltwo: { type: Boolean, default: false },
