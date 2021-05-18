@@ -559,6 +559,8 @@ app.get("/logout", function (req, res) {
   res.redirect("/");
 });
 
-app.listen(3000, function (req, res) {
-  console.log("Listening on port 3000");
+port = process.env.PORT || 3000;
+
+app.listen(port, function (req, res) {
+  console.log("Site is running successfully!");
 });
