@@ -151,12 +151,12 @@ app.post("/login", function (req, res) {
 
 app.get("/levelone", function (req, res) {
   const levelOneHint = req.user.levelonehint ? "Hint: This is a Hint" : "";
-  const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Yet Here";
-  const levelThreeStatus = req.user.levelthree ? "Reached" : "Not Yet Here";
-  const levelFourStatus = req.user.levelfour ? "Reached" : "Not Yet Here";
-  const levelFiveStatus = req.user.levelfive ? "Reached" : "Not Yet Here";
-  const levelSixStatus = req.user.levelsix ? "Reached" : "Not Yet Here";
-  const levelSevenStatus = req.user.levelseven ? "Reached" : "Not Yet Here";
+  const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
+  const levelThreeStatus = req.user.levelthree ? "Reached" : "Not Answered";
+  const levelFourStatus = req.user.levelfour ? "Reached" : "Not Answered";
+  const levelFiveStatus = req.user.levelfive ? "Reached" : "Not Answered";
+  const levelSixStatus = req.user.levelsix ? "Reached" : "Not Answered";
+  const levelSevenStatus = req.user.levelseven ? "Reached" : "Not Answered";
   const teamName = req.user.team;
 
   res.render("levelone", {
@@ -207,12 +207,12 @@ app.get("/leveltwo", function (req, res) {
 
   if (levelOneStatus) {
     const levelTwoHint = req.user.leveltwohint ? "Hint: This is a Hint 2" : "";
-    const levelOneStatus = req.user.levelone ? "Reached" : "Not Yet Here";
-    const levelThreeStatus = req.user.levelthree ? "Reached" : "Not Yet Here";
-    const levelFourStatus = req.user.levelfour ? "Reached" : "Not Yet Here";
-    const levelFiveStatus = req.user.levelfive ? "Reached" : "Not Yet Here";
-    const levelSixStatus = req.user.levelsix ? "Reached" : "Not Yet Here";
-    const levelSevenStatus = req.user.levelseven ? "Reached" : "Not Yet Here";
+    const levelOneStatus = req.user.levelone ? "Reached" : "Not Answered";
+    const levelThreeStatus = req.user.levelthree ? "Reached" : "Not Answered";
+    const levelFourStatus = req.user.levelfour ? "Reached" : "Not Answered";
+    const levelFiveStatus = req.user.levelfive ? "Reached" : "Not Answered";
+    const levelSixStatus = req.user.levelsix ? "Reached" : "Not Answered";
+    const levelSevenStatus = req.user.levelseven ? "Reached" : "Not Answered";
     const teamName = req.user.team;
     res.render("leveltwo", {
       team: teamName,
@@ -266,12 +266,12 @@ app.get("/levelthree", function (req, res) {
     const levelThreeHint = req.user.levelthreehint
       ? "Hint: This is a Hint 3"
       : "";
-    const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Yet Here";
-    const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Yet Here";
-    const levelFourStatus = req.user.levelfour ? "Reached" : "Not Yet Here";
-    const levelFiveStatus = req.user.levelfive ? "Reached" : "Not Yet Here";
-    const levelSixStatus = req.user.levelsix ? "Reached" : "Not Yet Here";
-    const levelSevenStatus = req.user.levelseven ? "Reached" : "Not Yet Here";
+    const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
+    const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
+    const levelFourStatus = req.user.levelfour ? "Reached" : "Not Answered";
+    const levelFiveStatus = req.user.levelfive ? "Reached" : "Not Answered";
+    const levelSixStatus = req.user.levelsix ? "Reached" : "Not Answered";
+    const levelSevenStatus = req.user.levelseven ? "Reached" : "Not Answered";
     const teamName = req.user.team;
     res.render("levelthree", {
       team: teamName,
@@ -325,12 +325,12 @@ app.get("/levelfour", function (req, res) {
     const levelFourHint = req.user.levelfourhint
       ? "Hint: This is a Hint 4"
       : "";
-    const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Yet Here";
-    const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Yet Here";
-    const levelThreeStatus = req.user.levelthree ? "Reached" : "Not Yet Here";
-    const levelFiveStatus = req.user.levelfive ? "Reached" : "Not Yet Here";
-    const levelSixStatus = req.user.levelsix ? "Reached" : "Not Yet Here";
-    const levelSevenStatus = req.user.levelseven ? "Reached" : "Not Yet Here";
+    const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
+    const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
+    const levelThreeStatus = req.user.levelthree ? "Reached" : "Not Answered";
+    const levelFiveStatus = req.user.levelfive ? "Reached" : "Not Answered";
+    const levelSixStatus = req.user.levelsix ? "Reached" : "Not Answered";
+    const levelSevenStatus = req.user.levelseven ? "Reached" : "Not Answered";
     const teamName = req.user.team;
     res.render("levelfour", {
       team: teamName,
@@ -384,12 +384,12 @@ app.get("/levelfive", function (req, res) {
     const levelFiveHint = req.user.levelfivehint
       ? "Hint: This is a Hint 5"
       : "";
-    const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Yet Here";
-    const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Yet Here";
-    const levelThreeStatus = req.user.levelthree ? "Reached" : "Not Yet Here";
-    const levelFourStatus = req.user.levelfour ? "Reached" : "Not Yet Here";
-    const levelSixStatus = req.user.levelsix ? "Reached" : "Not Yet Here";
-    const levelSevenStatus = req.user.levelseven ? "Reached" : "Not Yet Here";
+    const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
+    const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
+    const levelThreeStatus = req.user.levelthree ? "Reached" : "Not Answered";
+    const levelFourStatus = req.user.levelfour ? "Reached" : "Not Answered";
+    const levelSixStatus = req.user.levelsix ? "Reached" : "Not Answered";
+    const levelSevenStatus = req.user.levelseven ? "Reached" : "Not Answered";
     const teamName = req.user.team;
     res.render("levelfive", {
       team: teamName,
@@ -441,12 +441,12 @@ app.get("/levelsix", function (req, res) {
   const levelFiveStatus = req.user.levelfive;
   if (levelFiveStatus) {
     const levelSixHint = req.user.levelsixhint ? "Hint: This is a Hint 6" : "";
-    const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Yet Here";
-    const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Yet Here";
-    const levelThreeStatus = req.user.levelthree ? "Reached" : "Not Yet Here";
-    const levelFourStatus = req.user.levelfour ? "Reached" : "Not Yet Here";
-    const levelFiveStatus = req.user.levelfive ? "Reached" : "Not Yet Here";
-    const levelSevenStatus = req.user.levelseven ? "Reached" : "Not Yet Here";
+    const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
+    const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
+    const levelThreeStatus = req.user.levelthree ? "Reached" : "Not Answered";
+    const levelFourStatus = req.user.levelfour ? "Reached" : "Not Answered";
+    const levelFiveStatus = req.user.levelfive ? "Reached" : "Not Answered";
+    const levelSevenStatus = req.user.levelseven ? "Reached" : "Not Answered";
     const teamName = req.user.team;
     res.render("levelsix", {
       team: teamName,
@@ -501,12 +501,12 @@ app.get("/levelseven", function (req, res) {
       ? "Hint: This is a Hint 7"
       : "";
     const levelSixHint = req.user.levelsixhint ? "Hint: This is a Hint 6" : "";
-    const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Yet Here";
-    const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Yet Here";
-    const levelThreeStatus = req.user.levelthree ? "Reached" : "Not Yet Here";
-    const levelFourStatus = req.user.levelfour ? "Reached" : "Not Yet Here";
-    const levelFiveStatus = req.user.levelfive ? "Reached" : "Not Yet Here";
-    const levelSixStatus = req.user.levelsix ? "Reached" : "Not Yet Here";
+    const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
+    const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
+    const levelThreeStatus = req.user.levelthree ? "Reached" : "Not Answered";
+    const levelFourStatus = req.user.levelfour ? "Reached" : "Not Answered";
+    const levelFiveStatus = req.user.levelfive ? "Reached" : "Not Answered";
+    const levelSixStatus = req.user.levelsix ? "Reached" : "Not Answered";
     const teamName = req.user.team;
     res.render("levelseven", {
       team: teamName,
