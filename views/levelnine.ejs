@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Level 3 | Sychronic</title>
+    <title>Level 9 | Sychronic</title>
     <!-- Favicons -->
     <link href="img/favicon.ico" rel="icon">
     <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -53,7 +53,7 @@
                                                     class="badge badge-dot badge-dot-xl badge-warning"> </i> </span>
                                             <div class="vertical-timeline-element-content bounce-in">
                                                 <a href="/leveltwo">
-                                                    <h4 class="timeline-title">Amy's Location
+                                                    <h4 class="timeline-title">The Begining
                                                     </h4>
                                                     <p><%=leveltwo %></p>
                                                 </a>
@@ -64,12 +64,14 @@
                                     </div>
                                     <div class="vertical-timeline-item vertical-timeline-element">
                                         <div> <span class="vertical-timeline-element-icon bounce-in"> <i
-                                                    class="badge badge-dot answered-question"> </i>
+                                                    class="badge badge-dot badge-dot-xl badge-warning"> </i>
                                             </span>
                                             <div class="vertical-timeline-element-content bounce-in">
-                                                <h4 class="timeline-title">The Begining
-                                                </h4>
-                                                <p class="answered">Currently Here</p>
+                                                <a href="/levelthree">
+                                                    <h4 class="timeline-title">The Begining
+                                                    </h4>
+                                                    <p><%=levelthree %></p>
+                                                </a>
                                                 <span class="vertical-timeline-element-date"><a href="/levelthree">Level
                                                         3</a></span>
                                             </div>
@@ -121,11 +123,9 @@
                                         <div> <span class="vertical-timeline-element-icon bounce-in"> <i
                                                     class="badge badge-dot badge-dot-xl badge-warning"> </i> </span>
                                             <div class="vertical-timeline-element-content bounce-in">
-                                                <a href="/levelseven">
-                                                    <h4 class="timeline-title">The Begining
-                                                    </h4>
-                                                    <p><%=levelseven %></p>
-                                                </a>
+                                                <h4 class="timeline-title">The Begining
+                                                </h4>
+                                                <p><%=levelseven %></p>
                                                 <span class="vertical-timeline-element-date"><a href="/levelseven">Level
                                                         7</a></span>
                                             </div>
@@ -147,12 +147,12 @@
                                     </div>
                                     <div class="vertical-timeline-item vertical-timeline-element">
                                         <div> <span class="vertical-timeline-element-icon bounce-in"> <i
-                                                    class="badge badge-dot badge-dot-xl badge-warning"> </i> </span>
+                                                    class="badge badge-dot answered-question"> </i> </span>
                                             <div class="vertical-timeline-element-content bounce-in">
                                                 <a href="/levelnine">
                                                     <h4 class="timeline-title">The Begining
                                                     </h4>
-                                                    <p><%=levelnine %></p>
+                                                    <p class="answered">Currently Here</p>
                                                 </a>
                                                 <span class="vertical-timeline-element-date"><a href="/levelnine">Level
                                                         9</a></span>
@@ -270,12 +270,14 @@
 
                 <div class="container">
                     <label for="uname">
-                        <h3>Problem Statement 3</h3>
-                        <p> He went to get his Grandfather’s diary which is locked in an Ancient Box. Help him to open
-                            it. </p>
+                        <h3>Problem Statement 9</h3>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, corrupti!
+                            Doloribus rem corporis placeat provident itaque veniam id recusandae, eius quis
+                            aliquam incidunt ad. Ea. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Expedita, ex.</p>
                         <p class="hint"><%=hint%></p>
                     </label>
-                    <form action="/levelthree" method="POST" autocomplete="off">
+                    <form action="/levelnine" method="POST" autocomplete="off">
                         <input type="text" placeholder="Your answer..." name="answer" required>
                         <div class="container" style="text-align: center;">
                             <button type="submit" class="button button2">Submit</button>
@@ -294,11 +296,11 @@
 
                             <p class="hintpopup">Are you sure you want to take a hint?<br></p>
                             <div class="container" style="text-align: center;">
-                                <a type="button" href="/levelthreehint" style="margin-top: 10px;" class="button button1"
+                                <a type="button" href="/levelninehint" style="margin-top: 10px;" class="button button1"
                                     type="submit">Yes</a>
                             </div>
                             <br>
-                            <div class="container" style="text-align: center;"><a href="/levelthree"
+                            <div class="container" style="text-align: center;"><a href="/levelnine"
                                     class="button button2">No</a></div>
 
                         </div>
