@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Level 4 | Sychronic</title>
     <!-- Favicons -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/2.png" rel="icon">
     <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/bc297fed98.js" crossorigin="anonymous"></script>
@@ -27,7 +27,7 @@
         <div class="row">
             <!-- left column starts here -->
             <div class="column left" style="background-color:#0e0d0d;">
-                <h2>T i m e l i n e</h2>
+                <h2>T I M E L I N E</h2>
                 <div class="row d-flex justify-content-center mt-70 mb-70">
                     <div class="col-md-6">
                         <div class="main-card mb-3 card">
@@ -265,17 +265,12 @@
             <div class="column middle" style="background-color:#0e0d0d;">
 
                 <div class="imgcontainer">
-                    <img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2017/02/attachment_54077695-e1485977805770.jpg?auto=format&q=60&fit=max&w=930"
-                        class="avatar">
+                    <img src="img/ques4.png" class="avatar">
                 </div>
 
                 <div class="container">
                     <label for="uname">
                         <h3>Problem Statement 4</h3>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, corrupti!
-                            Doloribus rem corporis placeat provident itaque veniam id recusandae, eius quis
-                            aliquam incidunt ad. Ea. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Expedita, ex.</p>
                         <p class="hint"><%=hint%></p>
                     </label>
                     <form action="/levelfour" method="POST" autocomplete="off">
@@ -287,15 +282,13 @@
 
 
                     <div class="container" style="text-align: center;"><button class="button button1"
-                            onclick="document.getElementById('id01').style.display='block'"> Take
-                            a
-                            Hint</button></div>
+                            onclick="document.getElementById('id01').style.display='block'"> Get Answer</button></div>
 
                     <div id="id01" class="modal">
 
                         <div class="modal-content animate">
 
-                            <p class="hintpopup">Are you sure you want to take a hint?<br></p>
+                            <p class="hintpopup">Are you sure you want to get the answer?<br></p>
                             <div class="container" style="text-align: center;">
                                 <a type="button" href="/levelfourhint" style="margin-top: 10px;" class="button button1"
                                     type="submit">Yes</a>
@@ -319,6 +312,9 @@
                 </div>
                 <div class="container" style="text-align: center;">
                     <a type="button" href="/logout" style="margin-top: 10px;" class="button button1">Logout</a>
+                </div>
+                <div class="container" style="text-align: center;">
+                    <a href=""><img src="img/black.jpg" style="width: 10%; opacity: 0.15;"></a>
                 </div>
 
                 <!-- Optional JavaScript -->
@@ -377,7 +373,7 @@
     <!-- optional script in case we fail to implement the modal take hint button -->
     <script>
         function myFunction() {
-            confirm("Are you sure you want to take hint?");
+            confirm("Are you sure you want to get the answer?");
         }
     </script>
 

@@ -252,7 +252,9 @@ app.get("/leveltwo", function (req, res) {
   const levelOneStatus = req.user.levelone;
 
   if (levelOneStatus) {
-    const levelTwoHint = req.user.leveltwohint ? "Hint: This is a Hint 2" : "";
+    const levelTwoHint = req.user.leveltwohint
+      ? "Hint: You missed our trailer, probably"
+      : "";
     const levelOneStatus = req.user.levelone ? "Reached" : "Not Answered";
     const levelThreeStatus = req.user.levelthree ? "Reached" : "Not Answered";
     const levelFourStatus = req.user.levelfour ? "Reached" : "Not Answered";
@@ -332,7 +334,7 @@ app.get("/levelthree", function (req, res) {
   const levelTwoStatus = req.user.leveltwo;
   if (levelTwoStatus) {
     const levelThreeHint = req.user.levelthreehint
-      ? "Hint: This is a Hint 3"
+      ? "Hint: The box is the key"
       : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
@@ -379,7 +381,7 @@ app.get("/levelthree", function (req, res) {
 });
 
 app.post("/levelthree", function (req, res) {
-  const correctAnswer = "45925";
+  const correctAnswer = "459.25";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
@@ -412,9 +414,7 @@ app.get("/levelthreehint", function (req, res) {
 app.get("/levelfour", function (req, res) {
   const levelThreeStatus = req.user.levelthree;
   if (levelThreeStatus) {
-    const levelFourHint = req.user.levelfourhint
-      ? "Hint: This is a Hint 4"
-      : "";
+    const levelFourHint = req.user.levelfourhint ? "Answer: 1877505" : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelThreeStatus = req.user.levelthree ? "Reached" : "Not Answered";
@@ -460,7 +460,7 @@ app.get("/levelfour", function (req, res) {
 });
 
 app.post("/levelfour", function (req, res) {
-  const correctAnswer = "levelfour";
+  const correctAnswer = "1877505";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
@@ -494,7 +494,7 @@ app.get("/levelfive", function (req, res) {
   const levelFourStatus = req.user.levelfour;
   if (levelFourStatus) {
     const levelFiveHint = req.user.levelfivehint
-      ? "Hint: This is a Hint 5"
+      ? "Hint: Whose names are been discussed here"
       : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
@@ -541,7 +541,7 @@ app.get("/levelfive", function (req, res) {
 });
 
 app.post("/levelfive", function (req, res) {
-  const correctAnswer = "levelfive";
+  const correctAnswer = "222266";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
@@ -702,7 +702,7 @@ app.get("/levelseven", function (req, res) {
 });
 
 app.post("/levelseven", function (req, res) {
-  const correctAnswer = "levelseven";
+  const correctAnswer = "illusion";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
@@ -735,9 +735,7 @@ app.get("/levelsevenhint", function (req, res) {
 app.get("/leveleight", function (req, res) {
   const levelSevenStatus = req.user.levelseven;
   if (levelSevenStatus) {
-    const levelEightHint = req.user.leveleighthint
-      ? "Hint: This is a Hint 8"
-      : "";
+    const levelEightHint = req.user.leveleighthint ? "Answer: 9856073kms" : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelThreeStatus = req.user.levelthree ? "Reached" : "Not Answered";
@@ -783,7 +781,7 @@ app.get("/leveleight", function (req, res) {
 });
 
 app.post("/leveleight", function (req, res) {
-  const correctAnswer = "19:30";
+  const correctAnswer = "9856073kms";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
@@ -864,7 +862,7 @@ app.get("/levelnine", function (req, res) {
 });
 
 app.post("/levelnine", function (req, res) {
-  const correctAnswer = "19:30";
+  const correctAnswer = "electricitycut";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
@@ -1105,7 +1103,7 @@ app.get("/leveltwelve", function (req, res) {
 });
 
 app.post("/leveltwelve", function (req, res) {
-  const correctAnswer = "19:30";
+  const correctAnswer = "bethamycharlottesawadammike";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
@@ -1184,7 +1182,7 @@ app.get("/levelthirteen", function (req, res) {
 });
 
 app.post("/levelthirteen", function (req, res) {
-  const correctAnswer = "19:30";
+  const correctAnswer = "alpha@123";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
@@ -1263,7 +1261,7 @@ app.get("/levelfourteen", function (req, res) {
 });
 
 app.post("/levelfourteen", function (req, res) {
-  const correctAnswer = "19:30";
+  const correctAnswer = "helloworld";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {

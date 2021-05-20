@@ -188,10 +188,8 @@ body {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #162941;
+  background-color: #0e0d0d;
   background-clip: border-box;
-  border: 1px solid rgba(26, 54, 126, 0.125);
-  border-radius: 0.25rem;
 }
 
 .card-body {
@@ -557,7 +555,7 @@ button:hover {
 
 img.avatar {
   width: 40%;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
 .container {
