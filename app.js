@@ -1022,7 +1022,7 @@ app.get("/leveleleven", function (req, res) {
 });
 
 app.post("/leveleleven", function (req, res) {
-  const correctAnswer = "19:30";
+  const correctAnswer = "del1387";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
@@ -1378,6 +1378,12 @@ app.get("/congrats", function (req, res) {
   } else {
     res.redirect("/levelone");
   }
+});
+
+// QUALIFICATION PAGE
+
+app.get("/qualify", function (req, res) {
+  res.render("winners");
 });
 
 // LOGOUT ROUTE
