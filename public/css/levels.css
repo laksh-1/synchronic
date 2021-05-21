@@ -9,6 +9,12 @@
 /* Style the header links */
 
 @font-face {
+  font-family: adam;
+  src: url(../fonts/adamcgpro.otf);
+  font-weight: 100;
+}
+
+@font-face {
   font-family: monument;
   src: url(../fonts/MonumentExtended-Light.otf);
   font-weight: 100;
@@ -22,7 +28,7 @@ header {
   padding: 0 20px;
   color: #fff;
   margin-bottom: 30px;
-  font-family: "ADAM.CG PRO";
+  font-family: adam;
 }
 .brand-logo {
   max-width: 55px;
@@ -296,14 +302,14 @@ a {
   margin: 0 0 0.5rem;
   padding: 2px 0 0;
   font-weight: bold;
-  font-family: "ADAM.CG PRO";
+  font-family: adam;
 }
 
 .vertical-timeline-element-content p {
   text-align: center;
   color: white;
   font-size: 0.7rem;
-  font-family: "ADAM.CG PRO";
+  font-family: adam;
 }
 
 .vertical-timeline-element-content .vertical-timeline-element-date {
@@ -374,7 +380,7 @@ h1 {
 p {
   text-align: center;
   color: white;
-  font-family: "ADAM.CG PRO";
+  font-family: adam;
 }
 .column middle {
   background-color: #24ff72;

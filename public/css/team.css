@@ -38,6 +38,7 @@ section {
   padding-bottom: 20px;
   position: relative;
   color: #173b6c;
+  text-transform: uppercase;
 }
 
 .section-title h3::after {
