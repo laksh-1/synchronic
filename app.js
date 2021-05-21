@@ -494,7 +494,7 @@ app.get("/levelfive", function (req, res) {
   const levelFourStatus = req.user.levelfour;
   if (levelFourStatus) {
     const levelFiveHint = req.user.levelfivehint
-      ? "Hint: Whose names are been discussed here"
+      ? "Hint: The word you're looking for is the owner's name"
       : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
@@ -541,7 +541,7 @@ app.get("/levelfive", function (req, res) {
 });
 
 app.post("/levelfive", function (req, res) {
-  const correctAnswer = "222266";
+  const correctAnswer = "269";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
@@ -574,7 +574,9 @@ app.get("/levelfivehint", function (req, res) {
 app.get("/levelsix", function (req, res) {
   const levelFiveStatus = req.user.levelfive;
   if (levelFiveStatus) {
-    const levelSixHint = req.user.levelsixhint ? "Hint: This is a Hint 6" : "";
+    const levelSixHint = req.user.levelsixhint
+      ? "Hint: The name your're looking for is the base of the image"
+      : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelThreeStatus = req.user.levelthree ? "Reached" : "Not Answered";
@@ -654,9 +656,8 @@ app.get("/levelseven", function (req, res) {
   const levelSixStatus = req.user.levelsix;
   if (levelSixStatus) {
     const levelSevenHint = req.user.levelsevenhint
-      ? "Hint: This is a Hint 7"
+      ? "Hint: Look beyond the image"
       : "";
-    const levelSixHint = req.user.levelsixhint ? "Hint: This is a Hint 6" : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelThreeStatus = req.user.levelthree ? "Reached" : "Not Answered";
@@ -702,7 +703,7 @@ app.get("/levelseven", function (req, res) {
 });
 
 app.post("/levelseven", function (req, res) {
-  const correctAnswer = "illusion";
+  const correctAnswer = "therealityisanillusion";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
@@ -815,7 +816,7 @@ app.get("/levelnine", function (req, res) {
   const levelEightStatus = req.user.leveleight;
   if (levelEightStatus) {
     const levelNineHint = req.user.levelninehint
-      ? "Hint: This is a Hint 9"
+      ? "Hint: An eye for detail would help you look what you're looking for."
       : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
@@ -895,7 +896,7 @@ app.get("/levelninehint", function (req, res) {
 app.get("/levelten", function (req, res) {
   const levelNineStatus = req.user.levelnine;
   if (levelNineStatus) {
-    const levelTenHint = req.user.leveltenhint ? "Hint: This is a Hint 10" : "";
+    const levelTenHint = req.user.leveltenhint ? "Hint: Hovering is fun" : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelThreeStatus = req.user.levelthree ? "Reached" : "Not Answered";
@@ -941,7 +942,7 @@ app.get("/levelten", function (req, res) {
 });
 
 app.post("/levelten", function (req, res) {
-  const correctAnswer = "19:30";
+  const correctAnswer = "c85789";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
@@ -975,7 +976,7 @@ app.get("/leveleleven", function (req, res) {
   const levelTenStatus = req.user.levelten;
   if (levelTenStatus) {
     const levelElevenHint = req.user.levelelevenhint
-      ? "Hint: This is a Hint 11"
+      ? "Hint: You'd probably have come across this in Interstellar(of course if you like movies)"
       : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
@@ -1056,7 +1057,7 @@ app.get("/leveltwelve", function (req, res) {
   const levelElevenStatus = req.user.leveleleven;
   if (levelElevenStatus) {
     const levelTwelveHint = req.user.leveltwelvehint
-      ? "Hint: This is a Hint 12"
+      ? "Hint: Knowing Egyptian symbols might help"
       : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
@@ -1137,7 +1138,7 @@ app.get("/levelthirteen", function (req, res) {
   const levelTwelveStatus = req.user.leveltwelve;
   if (levelTwelveStatus) {
     const levelThirteenHint = req.user.levelthirteenhint
-      ? "Hint: This is a Hint 13"
+      ? "Hint: Rail-Fence"
       : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
@@ -1216,7 +1217,7 @@ app.get("/levelfourteen", function (req, res) {
   const levelThirteenStatus = req.user.levelthirteen;
   if (levelThirteenStatus) {
     const levelFourteenHint = req.user.levelfourteenhint
-      ? "Hint: This is a Hint 14"
+      ? "Hint: A single key can open multiple doors around here."
       : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
@@ -1295,7 +1296,7 @@ app.get("/levelfifteen", function (req, res) {
   const levelFourteenStatus = req.user.levelfourteen;
   if (levelFourteenStatus) {
     const levelFifteenHint = req.user.levelfifteenhint
-      ? "Hint: This is a Hint 15"
+      ? "Hint: भोले बाबा के आशीर्वाद से ASCII85 और पन्ने पता चल गए ||"
       : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
@@ -1340,7 +1341,7 @@ app.get("/levelfifteen", function (req, res) {
 });
 
 app.post("/levelfifteen", function (req, res) {
-  const correctAnswer = "19:30";
+  const correctAnswer = "746";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
