@@ -1383,9 +1383,9 @@ app.get("/team", function (req, res) {
 
 // QUALIFICATION PAGE
 
-app.get("/qualify", function (req, res) {
-  res.render("winners");
-});
+// app.get("/qualify", function (req, res) {
+//   res.render("winners");
+// });
 
 // LOGOUT ROUTE
 
