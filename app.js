@@ -1387,6 +1387,12 @@ app.get("/team", function (req, res) {
 //   res.render("winners");
 // });
 
+// EVENTS PAGE
+
+// app.get("/events", function (req, res) {
+//   res.render("events");
+// });
+
 // LOGOUT ROUTE
 
 // app.get("/logout", function (req, res) {
