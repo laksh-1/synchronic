@@ -4,12 +4,35 @@ body {
 }
 
 @font-face {
+  font-family: brownsugar;
+  src: url(../fonts/BrownSugar.otf);
+  font-weight: 800;
+  /* font-size: 100px; */
+}
+
+@font-face {
   font-family: monument;
-  src: url(../fonts/MonumentExtended-Light.otf);
+  src: url(../fonts/MonumentExtended-Regular.otf);
+  font-weight: 800;
+  /* font-size: 100px; */
+}
+
+@font-face {
+  font-family: futura;
+  src: url(../fonts/FuturaBookBT.ttf);
+  /* font-weight: 800; */
+  /* font-size: 100px; */
+}
+
+@font-face {
+  font-family: futurab;
+  src: url(../fonts/FuturaBold.ttf);
+  /* font-weight: 800; */
+  /* font-size: 100px; */
 }
 
 a {
-  color: #6facd1;
+  color: #d9dfe3;
   font-size: larger;
   cursor: default;
 }
@@ -27,8 +50,8 @@ h4,
 h5,
 h6 {
   /* font-family: "Raleway", sans-serif; */
-  font-family: monument;
-  font-weight: 100;
+  font-family: futurab;
+  /* font-weight: 500; */
 }
 
 /* Back to top */
@@ -41,7 +64,7 @@ h6 {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #0c2430;
+  background: rgb(0, 0, 0);
   color: #fff;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
@@ -73,7 +96,7 @@ h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  background: rgb(0, 0, 0);
   overflow-y: auto;
 }
 
@@ -97,7 +120,8 @@ h6 {
 #header .profile h1 a:hover {
   color: #fff;
   text-decoration: none;
-  font-family: monument;
+  font-family: futura;
+  letter-spacing: 4px;
 }
 
 #header .profile .social-links a {
@@ -199,7 +223,7 @@ h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #149ddd;
+  color: #7e8487;
 }
 
 .mobile-nav-active {
@@ -220,20 +244,18 @@ h6 {
 #landing {
   width: 100%;
   height: 100vh;
-  background-color: rgb(14, 13, 13);
+  background-color: rgb(0, 0, 0);
   background-size: cover;
 }
 
 #synchronic {
   color: transparent;
+  letter-spacing: 5px;
   text-transform: uppercase;
-  background: linear-gradient(
-    90deg,
-    rgb(46, 204, 112),
-    #3498db,
-    #9b59b6,
-    #f39c12
-  );
+  font-family: brownsugar;
+  /* font-size: 10px; */
+  background-color: white;
+  background: linear-gradient(90deg, #ffffff, #6f6a70, #d5d5d5);
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -273,24 +295,24 @@ h6 {
 
 #landing h1 {
   margin: 0 0 10px 0;
-  font-size: 64px;
+  font-size: 90px;
   font-weight: 700;
-  line-height: 56px;
+  line-height: 72px;
   color: #fff;
 }
 
 #landing p {
-  color: #fff;
+  color: rgb(171, 151, 151);
   margin-bottom: 50px;
-  font-size: 26px;
-  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-family: futura;
 }
 
 #landing p span {
-  color: #fff;
+  color: rgb(199, 186, 186);
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #dd1414;
+  border-bottom: 3px solid #2f3234;
 }
 
 @media (min-width: 1024px) {
@@ -301,8 +323,8 @@ h6 {
 
 @media (max-width: 768px) {
   #landing h1 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 68px;
+    line-height: 54px;
   }
   #landing h2 {
     font-size: 18px;
@@ -342,7 +364,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: rgb(11, 11, 11);
   text-transform: uppercase;
 }
 
@@ -367,7 +389,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: rgb(0, 0, 0);
 }
 
 .about .content ul {
@@ -394,8 +416,8 @@ section {
   overflow: hidden;
   position: relative;
   border-radius: 10px;
-  background: #09192d;
-  box-shadow: rgb(173, 172, 172) 4px 4px;
+  background: rgb(9, 9, 9);
+  box-shadow: rgb(212, 211, 211) 4px 4px;
   transition: all 0.6s ease-in-out;
   width: 100%;
   height: 100%;
@@ -414,8 +436,8 @@ section {
 }
 
 .description {
-  color: #b3d6ec;
-  font-size: monument;
+  color: #ffffff;
+  font-size: futura;
 }
 
 /*--------------------------------------------------------------
@@ -570,7 +592,7 @@ label {
   bottom: 0;
   width: 300px;
   z-index: 9999;
-  background: #040b14;
+  background: rgb(0, 0, 0);
 }
 
 #footer .copyright {
