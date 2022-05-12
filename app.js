@@ -7,6 +7,7 @@ const session = require("express-session");
 const encrypt = require("mongoose-encryption");
 const passport = require("passport");
 const passportLocalMongoose = require("passport-local-mongoose");
+const cookieParser = require("cookie-parser");
 
 const app = express();
 
