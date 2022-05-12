@@ -25,78 +25,78 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect(process.env.MONGO_URL, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
-mongoose.set("useCreateIndex", true);
+// mongoose.connect(process.env.MONGO_URL, {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// });
+// mongoose.set("useCreateIndex", true);
 
-function currentTime() {
-  var today = new Date();
-  var time =
-    today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-  return time;
-}
+// function currentTime() {
+//   var today = new Date();
+//   var time =
+//     today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+//   return time;
+// }
 
-const userSchema = new mongoose.Schema({
-  email: String,
-  password: String,
-  team: String,
-  levelone: { type: Boolean, default: false },
-  levelonehint: { type: Boolean, default: false },
-  levelonetime: { type: String, default: "" },
-  leveltwo: { type: Boolean, default: false },
-  leveltwohint: { type: Boolean, default: false },
-  leveltwotime: { type: String, default: "" },
-  levelthree: { type: Boolean, default: false },
-  levelthreehint: { type: Boolean, default: false },
-  levelthreetime: { type: String, default: "" },
-  levelfour: { type: Boolean, default: false },
-  levelfourhint: { type: Boolean, default: false },
-  levelfourtime: { type: String, default: "" },
-  levelfive: { type: Boolean, default: false },
-  levelfivehint: { type: Boolean, default: false },
-  levelfivetime: { type: String, default: "" },
-  levelsix: { type: Boolean, default: false },
-  levelsixhint: { type: Boolean, default: false },
-  levelsixtime: { type: String, default: "" },
-  levelseven: { type: Boolean, default: false },
-  levelsevenhint: { type: Boolean, default: false },
-  levelseventime: { type: String, default: "" },
-  leveleight: { type: Boolean, default: false },
-  leveleighthint: { type: Boolean, default: false },
-  leveleighttime: { type: String, default: "" },
-  levelnine: { type: Boolean, default: false },
-  levelninehint: { type: Boolean, default: false },
-  levelninetime: { type: String, default: "" },
-  levelten: { type: Boolean, default: false },
-  leveltenhint: { type: Boolean, default: false },
-  leveltentime: { type: String, default: "" },
-  leveleleven: { type: Boolean, default: false },
-  levelelevenhint: { type: Boolean, default: false },
-  leveleleventime: { type: String, default: "" },
-  leveltwelve: { type: Boolean, default: false },
-  leveltwelvehint: { type: Boolean, default: false },
-  leveltwelvetime: { type: String, default: "" },
-  levelthirteen: { type: Boolean, default: false },
-  levelthirteenhint: { type: Boolean, default: false },
-  levelthirteentime: { type: String, default: "" },
-  levelfourteen: { type: Boolean, default: false },
-  levelfourteenhint: { type: Boolean, default: false },
-  levelfourteentime: { type: String, default: "" },
-  levelfifteen: { type: Boolean, default: false },
-  levelfifteenhint: { type: Boolean, default: false },
-  levelfifteentime: { type: String, default: "" },
-});
+// const userSchema = new mongoose.Schema({
+//   email: String,
+//   password: String,
+//   team: String,
+//   levelone: { type: Boolean, default: false },
+//   levelonehint: { type: Boolean, default: false },
+//   levelonetime: { type: String, default: "" },
+//   leveltwo: { type: Boolean, default: false },
+//   leveltwohint: { type: Boolean, default: false },
+//   leveltwotime: { type: String, default: "" },
+//   levelthree: { type: Boolean, default: false },
+//   levelthreehint: { type: Boolean, default: false },
+//   levelthreetime: { type: String, default: "" },
+//   levelfour: { type: Boolean, default: false },
+//   levelfourhint: { type: Boolean, default: false },
+//   levelfourtime: { type: String, default: "" },
+//   levelfive: { type: Boolean, default: false },
+//   levelfivehint: { type: Boolean, default: false },
+//   levelfivetime: { type: String, default: "" },
+//   levelsix: { type: Boolean, default: false },
+//   levelsixhint: { type: Boolean, default: false },
+//   levelsixtime: { type: String, default: "" },
+//   levelseven: { type: Boolean, default: false },
+//   levelsevenhint: { type: Boolean, default: false },
+//   levelseventime: { type: String, default: "" },
+//   leveleight: { type: Boolean, default: false },
+//   leveleighthint: { type: Boolean, default: false },
+//   leveleighttime: { type: String, default: "" },
+//   levelnine: { type: Boolean, default: false },
+//   levelninehint: { type: Boolean, default: false },
+//   levelninetime: { type: String, default: "" },
+//   levelten: { type: Boolean, default: false },
+//   leveltenhint: { type: Boolean, default: false },
+//   leveltentime: { type: String, default: "" },
+//   leveleleven: { type: Boolean, default: false },
+//   levelelevenhint: { type: Boolean, default: false },
+//   leveleleventime: { type: String, default: "" },
+//   leveltwelve: { type: Boolean, default: false },
+//   leveltwelvehint: { type: Boolean, default: false },
+//   leveltwelvetime: { type: String, default: "" },
+//   levelthirteen: { type: Boolean, default: false },
+//   levelthirteenhint: { type: Boolean, default: false },
+//   levelthirteentime: { type: String, default: "" },
+//   levelfourteen: { type: Boolean, default: false },
+//   levelfourteenhint: { type: Boolean, default: false },
+//   levelfourteentime: { type: String, default: "" },
+//   levelfifteen: { type: Boolean, default: false },
+//   levelfifteenhint: { type: Boolean, default: false },
+//   levelfifteentime: { type: String, default: "" },
+// });
 
-userSchema.plugin(passportLocalMongoose);
+// userSchema.plugin(passportLocalMongoose);
 
-const User = new mongoose.model("User", userSchema);
+// const User = new mongoose.model("User", userSchema);
 
-passport.use(User.createStrategy());
+// passport.use(User.createStrategy());
 
-passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser());
+// passport.serializeUser(User.serializeUser());
+// passport.deserializeUser(User.deserializeUser());
 
 // HOME ROUTE
 
