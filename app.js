@@ -573,7 +573,7 @@ app.get("/levelfivehint", function (req, res) {
 app.get("/levelsix", function (req, res) {
   const levelFiveStatus = req.user.levelfive;
   if (levelFiveStatus) {
-    const levelSixHint = req.user.levelsixhint ? "Hint: The year is 2016" : "";
+    const levelSixHint = req.user.levelsixhint ? "Hint: The year is 2017" : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelThreeStatus = req.user.levelthree ? "Reached" : "Not Answered";
@@ -619,7 +619,7 @@ app.get("/levelsix", function (req, res) {
 });
 
 app.post("/levelsix", function (req, res) {
-  const correctAnswer = "20.11.2016";
+  const correctAnswer = "20.11.2017";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
