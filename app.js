@@ -299,7 +299,7 @@ app.get("/leveltwo", function (req, res) {
 });
 
 app.post("/leveltwo", function (req, res) {
-  const correctAnswer = "manitou";
+  const correctAnswer = "115";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
@@ -779,10 +779,11 @@ app.get("/leveleight", function (req, res) {
 });
 
 app.post("/leveleight", function (req, res) {
-  const correctAnswer = "9856073kms";
+  const correctAnswer1 = "bcdhgfer";
+  const correctAnswer2 = "azyxwuts";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
-  if (correctAnswer == submittedAnswer) {
+  if (correctAnswer1 == submittedAnswer || correctAnswer2 == submittedAnswer) {
     console.log("correct8");
     var time = currentTime();
     User.updateOne(
@@ -894,7 +895,7 @@ app.get("/levelten", function (req, res) {
   const levelNineStatus = req.user.levelnine;
   if (levelNineStatus) {
     const levelTenHint = req.user.leveltenhint
-      ? "Hint: Romans were great fighter."
+      ? "Hint: Romans were great fighters."
       : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
