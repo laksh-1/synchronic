@@ -110,7 +110,7 @@ app.get("/home", function (req, res) {
 
 // TEAM PAGE
 app.get("/team", function (req, res) {
-  res.render("new");
+  res.render("team");
 });
 
 // REGISTER ROUTE
@@ -1381,15 +1381,15 @@ app.get("/congrats", function (req, res) {
 
 // QUALIFICATION PAGE
 
-app.get("/qualify", function (req, res) {
-  res.render("winners");
-});
+// app.get("/qualify", function (req, res) {
+//   res.render("winners");
+// });
 
 // EVENTS PAGE
 
-app.get("/events", function (req, res) {
-  res.render("events");
-});
+// app.get("/events", function (req, res) {
+//   res.render("events");
+// });
 
 // LOGOUT ROUTE
 
