@@ -173,7 +173,7 @@ app.post("/login", function (req, res) {
 
 app.get("/levelone", function (req, res) {
   const levelOneHint = req.user.levelonehint
-    ? "Hint: Peek through the layers"
+    ? "Hint: There are 18 Rotten eggs in the basket."
     : "";
   const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
   const levelThreeStatus = req.user.levelthree ? "Reached" : "Not Answered";
@@ -216,7 +216,7 @@ app.get("/levelone", function (req, res) {
 });
 
 app.post("/levelone", function (req, res) {
-  const correctAnswer = "4096000";
+  const correctAnswer = "123149473112";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
@@ -250,9 +250,7 @@ app.get("/leveltwo", function (req, res) {
   const levelOneStatus = req.user.levelone;
 
   if (levelOneStatus) {
-    const levelTwoHint = req.user.leveltwohint
-      ? "Hint: You missed our trailer, probably"
-      : "";
+    const levelTwoHint = req.user.leveltwohint ? "No hint here." : "";
     const levelOneStatus = req.user.levelone ? "Reached" : "Not Answered";
     const levelThreeStatus = req.user.levelthree ? "Reached" : "Not Answered";
     const levelFourStatus = req.user.levelfour ? "Reached" : "Not Answered";
@@ -332,7 +330,7 @@ app.get("/levelthree", function (req, res) {
   const levelTwoStatus = req.user.leveltwo;
   if (levelTwoStatus) {
     const levelThreeHint = req.user.levelthreehint
-      ? "Hint: The box is the key"
+      ? "Hint: It is a nordic country"
       : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
@@ -379,7 +377,7 @@ app.get("/levelthree", function (req, res) {
 });
 
 app.post("/levelthree", function (req, res) {
-  const correctAnswer = "459.25";
+  const correctAnswer = "60.4720° n, 8.4689° e";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
@@ -412,7 +410,7 @@ app.get("/levelthreehint", function (req, res) {
 app.get("/levelfour", function (req, res) {
   const levelThreeStatus = req.user.levelthree;
   if (levelThreeStatus) {
-    const levelFourHint = req.user.levelfourhint ? "Answer: 1877505" : "";
+    const levelFourHint = req.user.levelfourhint ? "Hint: See the Artist" : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelThreeStatus = req.user.levelthree ? "Reached" : "Not Answered";
@@ -458,7 +456,7 @@ app.get("/levelfour", function (req, res) {
 });
 
 app.post("/levelfour", function (req, res) {
-  const correctAnswer = "1877505";
+  const correctAnswer = "gautam thapar";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
@@ -492,7 +490,7 @@ app.get("/levelfive", function (req, res) {
   const levelFourStatus = req.user.levelfour;
   if (levelFourStatus) {
     const levelFiveHint = req.user.levelfivehint
-      ? "Hint: The word you're looking for is the owner's name"
+      ? "Hint: Try Caesar cipher"
       : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
@@ -539,7 +537,7 @@ app.get("/levelfive", function (req, res) {
 });
 
 app.post("/levelfive", function (req, res) {
-  const correctAnswer = "269";
+  const correctAnswer = "realityisanillusion";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
@@ -572,9 +570,7 @@ app.get("/levelfivehint", function (req, res) {
 app.get("/levelsix", function (req, res) {
   const levelFiveStatus = req.user.levelfive;
   if (levelFiveStatus) {
-    const levelSixHint = req.user.levelsixhint
-      ? "Hint: The name your're looking for is the base of the image"
-      : "";
+    const levelSixHint = req.user.levelsixhint ? "Hint: The year is 2016" : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelThreeStatus = req.user.levelthree ? "Reached" : "Not Answered";
@@ -620,7 +616,7 @@ app.get("/levelsix", function (req, res) {
 });
 
 app.post("/levelsix", function (req, res) {
-  const correctAnswer = "19:30";
+  const correctAnswer = "20.11.2016";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
@@ -654,7 +650,7 @@ app.get("/levelseven", function (req, res) {
   const levelSixStatus = req.user.levelsix;
   if (levelSixStatus) {
     const levelSevenHint = req.user.levelsevenhint
-      ? "Hint: Look beyond the image"
+      ? "Hint: The Painting is Starry Night"
       : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
@@ -701,7 +697,7 @@ app.get("/levelseven", function (req, res) {
 });
 
 app.post("/levelseven", function (req, res) {
-  const correctAnswer = "therealityisanillusion";
+  const correctAnswer = "vincent van gogh";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
@@ -734,7 +730,7 @@ app.get("/levelsevenhint", function (req, res) {
 app.get("/leveleight", function (req, res) {
   const levelSevenStatus = req.user.levelseven;
   if (levelSevenStatus) {
-    const levelEightHint = req.user.leveleighthint ? "Answer: 9856073kms" : "";
+    const levelEightHint = req.user.leveleighthint ? "No hint here." : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelThreeStatus = req.user.levelthree ? "Reached" : "Not Answered";
@@ -814,7 +810,7 @@ app.get("/levelnine", function (req, res) {
   const levelEightStatus = req.user.leveleight;
   if (levelEightStatus) {
     const levelNineHint = req.user.levelninehint
-      ? "Hint: An eye for detail would help you look what you're looking for."
+      ? "Hint: Focus on the url."
       : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
@@ -861,7 +857,7 @@ app.get("/levelnine", function (req, res) {
 });
 
 app.post("/levelnine", function (req, res) {
-  const correctAnswer = "electricitycut";
+  const correctAnswer = "rosedale valley road";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
@@ -894,7 +890,9 @@ app.get("/levelninehint", function (req, res) {
 app.get("/levelten", function (req, res) {
   const levelNineStatus = req.user.levelnine;
   if (levelNineStatus) {
-    const levelTenHint = req.user.leveltenhint ? "Hint: Hovering is fun" : "";
+    const levelTenHint = req.user.leveltenhint
+      ? "Hint: Romans were great fighter."
+      : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelThreeStatus = req.user.levelthree ? "Reached" : "Not Answered";
@@ -940,7 +938,7 @@ app.get("/levelten", function (req, res) {
 });
 
 app.post("/levelten", function (req, res) {
-  const correctAnswer = "c85789";
+  const correctAnswer = "1009";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
@@ -974,7 +972,7 @@ app.get("/leveleleven", function (req, res) {
   const levelTenStatus = req.user.levelten;
   if (levelTenStatus) {
     const levelElevenHint = req.user.levelelevenhint
-      ? "Hint: You'd probably have come across this in Interstellar(of course if you like movies)"
+      ? "Hint: Search the internet about Dorette Carton."
       : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
@@ -1021,7 +1019,7 @@ app.get("/leveleleven", function (req, res) {
 });
 
 app.post("/leveleleven", function (req, res) {
-  const correctAnswer = "del1387";
+  const correctAnswer = "022014";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
@@ -1055,7 +1053,7 @@ app.get("/leveltwelve", function (req, res) {
   const levelElevenStatus = req.user.leveleleven;
   if (levelElevenStatus) {
     const levelTwelveHint = req.user.leveltwelvehint
-      ? "Hint: Knowing Egyptian symbols might help"
+      ? "Hint: Pick the odd one out."
       : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
@@ -1102,7 +1100,7 @@ app.get("/leveltwelve", function (req, res) {
 });
 
 app.post("/leveltwelve", function (req, res) {
-  const correctAnswer = "bethamycharlottesawadammike";
+  const correctAnswer = "viep";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
@@ -1136,7 +1134,7 @@ app.get("/levelthirteen", function (req, res) {
   const levelTwelveStatus = req.user.leveltwelve;
   if (levelTwelveStatus) {
     const levelThirteenHint = req.user.levelthirteenhint
-      ? "Hint: Rail-Fence"
+      ? "Hint: Focus on the Headlines."
       : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
@@ -1181,7 +1179,7 @@ app.get("/levelthirteen", function (req, res) {
 });
 
 app.post("/levelthirteen", function (req, res) {
-  const correctAnswer = "alpha@123";
+  const correctAnswer = "abre la puerta";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
@@ -1215,7 +1213,7 @@ app.get("/levelfourteen", function (req, res) {
   const levelThirteenStatus = req.user.levelthirteen;
   if (levelThirteenStatus) {
     const levelFourteenHint = req.user.levelfourteenhint
-      ? "Hint: A single key can open multiple doors around here."
+      ? "Hint: Run for your life."
       : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
@@ -1260,7 +1258,7 @@ app.get("/levelfourteen", function (req, res) {
 });
 
 app.post("/levelfourteen", function (req, res) {
-  const correctAnswer = "helloworld";
+  const correctAnswer = "outsiders are not allowed";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
@@ -1293,9 +1291,7 @@ app.get("/levelfourteenhint", function (req, res) {
 app.get("/levelfifteen", function (req, res) {
   const levelFourteenStatus = req.user.levelfourteen;
   if (levelFourteenStatus) {
-    const levelFifteenHint = req.user.levelfifteenhint
-      ? "Hint: भोले बाबा के आशीर्वाद से ASCII85 और पन्ने पता चल गए ||"
-      : "";
+    const levelFifteenHint = req.user.levelfifteenhint ? "No hint here." : "";
     const levelOneStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelTwoStatus = req.user.leveltwo ? "Reached" : "Not Answered";
     const levelThreeStatus = req.user.levelthree ? "Reached" : "Not Answered";
@@ -1339,7 +1335,7 @@ app.get("/levelfifteen", function (req, res) {
 });
 
 app.post("/levelfifteen", function (req, res) {
-  const correctAnswer = "746";
+  const correctAnswer = "everything is fake";
   const submittedAnswer = req.body.answer;
   // console.log(req.user);
   if (correctAnswer == submittedAnswer) {
