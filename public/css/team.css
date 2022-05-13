@@ -1,13 +1,34 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #272829;
+}
+
+@font-face {
+  font-family: brownsugar;
+  src: url(../fonts/BrownSugar.otf);
+  font-weight: 800;
+  /* font-size: 100px; */
 }
 
 @font-face {
   font-family: monument;
-  src: url(../fonts/MonumentExtended-Light.otf);
-  font-weight: 100;
+  src: url(../fonts/MonumentExtended-Regular.otf);
+  font-weight: 800;
+  /* font-size: 100px; */
+}
+
+@font-face {
+  font-family: futura;
+  src: url(../fonts/FuturaBookBT.ttf);
+  /* font-weight: 800; */
+  /* font-size: 100px; */
+}
+
+@font-face {
+  font-family: futurab;
+  src: url(../fonts/FuturaBold.ttf);
+  /* font-weight: 800; */
+  /* font-size: 100px; */
 }
 
 a {
@@ -74,7 +95,7 @@ h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  background: rgb(0, 0, 0);
   overflow-y: auto;
 }
 
@@ -92,12 +113,15 @@ h6 {
   -moz-text-align-last: center;
   text-align-last: center;
   font-family: "Poppins", sans-serif;
+  letter-spacing: 4px;
 }
 
 #header .profile h1 a,
 #header .profile h1 a:hover {
   color: #fff;
   text-decoration: none;
+  font-family: futura;
+  letter-spacing: 4px;
 }
 
 #header .profile .social-links a {
@@ -295,7 +319,7 @@ h6 {
 
 /* Footer */
 .site-footer {
-  background-color: #191a1b;
+  background-color: rgb(0, 0, 0);
   padding: 45px 0 20px;
   font-size: 15px;
   line-height: 24px;
@@ -412,7 +436,7 @@ h6 {
   bottom: 0;
   width: 300px;
   z-index: 9999;
-  background: #040b14;
+  background: rgb(0, 0, 0);
 }
 
 #footer .copyright {
