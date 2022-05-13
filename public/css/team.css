@@ -79,7 +79,7 @@ h3,
 h5,
 h6 {
   /* font-family: "Raleway", sans-serif; */
-  font-family: monument;
+  font-family: futura;
 }
 
 /*--------------------------------------------------------------
@@ -486,7 +486,7 @@ h6 {
 }
 
 .tabs > label {
-  font-family: monument;
+  font-family: futura;
   color: #173b6c;
   display: inline-block;
   text-align: center;
@@ -495,7 +495,7 @@ h6 {
   /* background-color: #f5f5f5;
   border: 1px solid #e0e0e0; */
   padding: 2px 8px;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 1.5;
   /* transition: color 0.9s ease-in-out, display 0.15s ease-in-out; */
   cursor: pointer;
