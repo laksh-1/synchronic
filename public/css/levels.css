@@ -10,13 +10,13 @@
 
 @font-face {
   font-family: adam;
-  src: url(../fonts/adamcgpro.otf);
+  src: url(../fonts/FuturaBookBT.ttf);
   font-weight: 100;
 }
 
 @font-face {
   font-family: monument;
-  src: url(../fonts/MonumentExtended-Light.otf);
+  src: url(../fonts/BrownSugar.otf);
   font-weight: 100;
 }
 
@@ -297,7 +297,7 @@ a {
 
 .vertical-timeline-element-content .timeline-title {
   font-size: 1rem;
-  color: #23a4cf;
+  color: #b61616;
   text-transform: uppercase;
   margin: 0 0 0.5rem;
   padding: 2px 0 0;
@@ -335,7 +335,7 @@ a {
 h2 {
   text-align: center;
   color: white;
-  font-family: monument;
+  font-family: futura;
 }
 
 h1 {
@@ -349,20 +349,16 @@ h1 {
 #synchronic {
   color: transparent;
   text-transform: uppercase;
-  background: linear-gradient(
-    90deg,
-    rgb(46, 204, 112),
-    #3498db,
-    #9b59b6,
-    #f39c12
-  );
+  background: linear-gradient(90deg, #ffffff, #6f6a70, #d5d5d5);
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   animation: synchronic 5s linear infinite;
   -webkit-background-size: 500%;
   background-size: 500%;
-  font-size: 3.5vmax;
+  /* font-size: 3.5vmax; */
+  font-size: 3.8rem;
+  letter-spacing: 5px;
 }
 
 @keyframes synchronic {
@@ -525,8 +521,8 @@ h4 {
 h3 {
   text-align: center;
   font-size: 1.2rem;
-  font-family: monument;
-  color: rgb(62, 98, 214);
+  font-family: futura;
+  color: #b61616;
 }
 
 p {

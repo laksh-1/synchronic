@@ -1,18 +1,41 @@
 @font-face {
+  font-family: brownsugar;
+  src: url(../fonts/BrownSugar.otf);
+  font-weight: 800;
+  /* font-size: 100px; */
+}
+
+@font-face {
   font-family: monument;
-  src: url(../fonts/MonumentExtended-Light.otf);
+  src: url(../fonts/MonumentExtended-Regular.otf);
+  font-weight: 800;
+  /* font-size: 100px; */
+}
+
+@font-face {
+  font-family: futura;
+  src: url(../fonts/FuturaBookBT.ttf);
+  /* font-weight: 800; */
+  /* font-size: 100px; */
+}
+
+@font-face {
+  font-family: futurab;
+  src: url(../fonts/FuturaBold.ttf);
+  /* font-weight: 800; */
+  /* font-size: 100px; */
 }
 
 body {
-  background: #071218;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #090909;
+  font-family: futura;
   margin: 15px;
 }
 
 .login-box {
   margin-top: 75px;
   height: auto;
-  background: #0f2029;
+  background: #0e0e0e;
   text-align: center;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
@@ -134,14 +157,12 @@ label {
 
 #synchronic {
   color: transparent;
+  letter-spacing: 5px;
   text-transform: uppercase;
-  background: linear-gradient(
-    90deg,
-    rgb(46, 204, 112),
-    #3498db,
-    #9b59b6,
-    #f39c12
-  );
+  font-family: brownsugar;
+  /* font-size: 10px; */
+  background-color: white;
+  background: linear-gradient(90deg, #ffffff, #6f6a70, #d5d5d5);
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;

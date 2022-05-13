@@ -203,7 +203,7 @@ h6 {
 .nav-menu a:hover i,
 .nav-menu .active > a i,
 .nav-menu li:hover > a i {
-  color: #149ddd;
+  color: #b61616;
 }
 
 /* Mobile Navigation */
@@ -304,7 +304,7 @@ h6 {
 #landing p {
   color: rgb(171, 151, 151);
   margin-bottom: 50px;
-  font-size: 18px;
+  font-size: 15px;
   font-family: futura;
 }
 
@@ -323,11 +323,11 @@ h6 {
 
 @media (max-width: 768px) {
   #landing h1 {
-    font-size: 68px;
-    line-height: 54px;
+    font-size: 58px;
+    line-height: 60px;
   }
   #landing h2 {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     margin-bottom: 30px;
   }
